@@ -48,5 +48,10 @@ namespace leave_management.Repository
             _db.LeaveHistories.Update(entity);
             return Save();
         }
+
+        bool IRepositoryBase<LeaveHistory>.isExists(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

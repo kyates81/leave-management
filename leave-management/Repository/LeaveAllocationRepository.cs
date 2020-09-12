@@ -48,5 +48,10 @@ namespace leave_management.Repository
             _db.LeaveAllocations.Update(entity);
             return Save();
         }
+
+        bool IRepositoryBase<LeaveAllocation>.isExists(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
